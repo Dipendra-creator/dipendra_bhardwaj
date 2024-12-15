@@ -15,7 +15,7 @@ export const products: Product[] = [
     description:
       "LazyORM is a Python library designed to simplify database interactions with MySQL. It provides a clean and efficient way to work with your data by leveraging lazy loading techniques.",
     thumbnail: pip,
-    images: [pip, sidefolioAceternity2],
+    images: [pip],
     stack: ["Python", "MySQL"],
     slug: "lazzyorm",
     content: (
@@ -42,7 +42,7 @@ export const products: Product[] = [
     description:
       "This project involves the development of a Kafka Manager integrated with a robust Notification Service. Designed with a best-practice architecture, the system facilitates efficient message management and real-time notifications.",
     thumbnail: kafka,
-    images: [kafka, sidefolioAlgochurn2],
+    images: [kafka],
     stack: ["Python", "Kafka", "MySQL", "LazzyORM"],
     slug: "kafka-manager",
     content: (
@@ -71,7 +71,7 @@ export const products: Product[] = [
     description:
       "AnimeHub is a modern web application built with Next.js that serves as a community platform for anime enthusiasts. It features a sleek UI with 3D card animations, real-time updates, and comprehensive anime information sourced from the MyAnimeList API.",
     thumbnail: kira_anime,
-    images: [kira_anime, sidefolioMoonbeam2],
+    images: [kira_anime],
     stack: ["Nextjs", "Tailwind Css", "Jikan API", "Rust API"],
     slug: "kira-anime",
     content: (
