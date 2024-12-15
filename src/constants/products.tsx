@@ -1,11 +1,11 @@
-import sidefolioAceternity from "public/images/sidefolio-aceternity-2.png";
-import sidefolioAceternity2 from "public/images/sidefolio-aceternity-2.png";
-import sidefolioAlgochurn from "public/images/sidefolio-algochurn.png";
-import sidefolioAlgochurn2 from "public/images/sidefolio-algochurn.png";
-import sidefolioMoonbeam from "public/images/sidefolio-moonbeam.png";
-import sidefolioMoonbeam2 from "public/images/sidefolio-moonbeam-2.png";
-import sidefolioTailwindMasterKit from "public/images/sidefolio-tailwindmasterkit.png";
-import sidefolioTailwindMasterKit2 from "public/images/sidefolio-tailwindmasterkit-2.png";
+import sidefolioAceternity from "@images/sidefolio-aceternity-2.png";
+import sidefolioAceternity2 from "@images/sidefolio-aceternity-2.png";
+import sidefolioAlgochurn from "@images/sidefolio-algochurn.png";
+import sidefolioAlgochurn2 from "@images/sidefolio-algochurn.png";
+import sidefolioMoonbeam from "@images/sidefolio-moonbeam.png";
+import sidefolioMoonbeam2 from "@images/sidefolio-moonbeam-2.png";
+import sidefolioTailwindMasterKit from "@images/sidefolio-tailwindmasterkit.png";
+import sidefolioTailwindMasterKit2 from "@images/sidefolio-tailwindmasterkit-2.png";
 
 export const products = [
   {
