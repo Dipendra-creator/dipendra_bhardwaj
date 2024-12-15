@@ -13,6 +13,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { IconLayoutSidebarRightCollapse } from "@tabler/icons-react";
 import { isMobile } from "@/lib/utils";
 import { FlipbookTime } from "@/components/flipbook";
+import dipendra from "@images/dipendra__bhardwaj-20241213-0001.webp"
 
 export const Sidebar = () => {
   const [open, setOpen] = useState(isMobile() ? false : true);
@@ -110,7 +111,7 @@ const SidebarHeader = () => {
     <div>
       <div className="flex space-x-2">
         <Image
-          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80"
+          src={dipendra}
           alt="Avatar"
           height="40"
           width="40"
@@ -118,7 +119,7 @@ const SidebarHeader = () => {
         />
         <div className="flex text-sm flex-col">
           <p className="font-bold text-primary">Dipendra Bhardwaj</p>
-          <p className="font-light text-secondary">Developer</p>
+          <p className="font-light text-secondary">Sr. SDE 1</p>
         </div>
       </div>
       <div className="mt-8">

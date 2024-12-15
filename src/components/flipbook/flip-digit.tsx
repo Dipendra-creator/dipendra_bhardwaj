@@ -44,7 +44,7 @@ export function FlipDigit({ digit, label }: FlipDigitProps) {
         </div>
 
         {/* Center Line */}
-        <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-neutral-200 z-10" />
+        {/*<div className="absolute top-1/2 left-0 right-0 h-[1px] bg-neutral-200 z-10" />*/}
       </div>
       <span className="text-[10px] font-medium text-neutral-800 uppercase tracking-wider">{label}</span>
     </div>

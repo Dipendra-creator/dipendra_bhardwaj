@@ -11,7 +11,7 @@ export const socials = [
     icon: IconBrandTwitter,
   },
   {
-    href: "https://linkedin.com/in/manuarora28",
+    href: "https://linkedin.com/in/DipendraBhardwaj28",
     label: "LinkedIn",
     icon: IconBrandLinkedin,
   },

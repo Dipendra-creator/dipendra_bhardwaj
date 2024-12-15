@@ -54,7 +54,7 @@ const FlipDigit: React.FC<FlipDigitProps> = ({ digit, label }) => {
         </AnimatePresence>
 
         {/* Divider Line */}
-        <div className="absolute inset-x-0 top-1/2 h-[1px] bg-black z-10"></div>
+        {/*<div className="absolute inset-x-0 top-1/2 h-[1px] bg-black z-10"></div>*/}
       </div>
 
       {/* Label */}
