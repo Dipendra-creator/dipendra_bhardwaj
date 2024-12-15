@@ -12,36 +12,33 @@ import { redirect } from "next/navigation";
 
 type Props = {
   params: { slug: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = params.slug;
-  const product = products.find((p) => p.slug === slug) as Product | undefined;
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  const product = products.find((p) => p.slug === params.slug) as Product | undefined;
+  
   if (product) {
     return {
       title: product.title,
       description: product.description,
     };
-  } else {
-    return {
-      title: "Projects | Dipendra Bhardwaj",
-      description:
-        "Dipendra Bhardwaj is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
-    };
   }
+  
+  return {
+    title: "Projects | Dipendra Bhardwaj",
+    description:
+      "Dipendra Bhardwaj is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+  };
 }
 
-export default function SingleProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const slug = params.slug;
-  const product = products.find((p) => p.slug === slug);
+export default async function SingleProjectPage({ params }: any) {
+  const product = products.find((p) => p.slug === params.slug);
 
   if (!product) {
     redirect("/projects");
   }
+  
   return (
     <Container>
       <SingleProduct product={product} />
