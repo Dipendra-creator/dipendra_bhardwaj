@@ -2,6 +2,7 @@ import {
   IconBrandLinkedin,
   IconBrandTwitter,
   IconBrandYoutube,
+  IconBrandGithub
 } from "@tabler/icons-react";
 
 export const socials = [
@@ -17,7 +18,7 @@ export const socials = [
   },
   {
     href: "https://github.com/Dipendra-creator",
-    label: "YouTube",
-    icon: IconBrandYoutube,
+    label: "Github",
+    icon: IconBrandGithub,
   },
 ];
