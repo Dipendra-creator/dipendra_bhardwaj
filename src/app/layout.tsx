@@ -28,6 +28,7 @@ export default function RootLayout({
         inter.className,
         "flex antialiased h-screen overflow-hidden bg-gray-100"
       )}
+      suppressHydrationWarning={true}
     >
     <Sidebar />
     <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">

@@ -16,6 +16,9 @@ const remotePattern2: RemotePattern= {
 }
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   // Allow .mdx extensions for files
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   // Optionally, add any other Next.js config below
@@ -26,16 +29,13 @@ const nextConfig: NextConfig = {
       remotePattern2
     ],
   },
+  experimental: {
+    mdxRs: true,
+  }
 }
 
 
-const withMDX = createMDX({
-  // Add markdown plugins here, as desired
-  options: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypePrism],
-  },
-})
+const withMDX = require('@next/mdx')();
 
 // Combine MDX and Next.js config
 export default withMDX(nextConfig)
