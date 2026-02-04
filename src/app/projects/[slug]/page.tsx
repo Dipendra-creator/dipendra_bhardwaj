@@ -16,7 +16,8 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: any): Promise<Metadata> {
-  const product = products.find((p) => p.slug === params.slug) as Product | undefined;
+  const { slug } = await params;
+  const product = products.find((p) => p.slug === slug) as Product | undefined;
   
   if (product) {
     return {
@@ -33,7 +34,8 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
 }
 
 export default async function SingleProjectPage({ params }: any) {
-  const product = products.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const product = products.find((p) => p.slug === slug);
 
   if (!product) {
     redirect("/projects");

@@ -5,18 +5,19 @@ import Link from "next/link";
 export const Badge = ({
   text,
   href,
+  target,
   ...props
 }: {
   text: string;
   href: string;
+  target?: string;
   props?: React.ComponentProps<typeof Link>;
 }) => {
-  return (
-    <Link
-      href={href}
-      className="bg-slate-900 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
-      {...props}
-    >
+  // Check if it's an external link or file
+  const isExternal = href.startsWith('http') || href.endsWith('.pdf');
+  
+  const content = (
+    <>
       <span className="absolute inset-0 overflow-hidden rounded-full ">
         <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
       </span>
@@ -42,6 +43,30 @@ export const Badge = ({
         </svg>
       </div>
       <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
+    </>
+  );
+
+  if (isExternal) {
+    return (
+      <a
+        href={href}
+        target={target || "_blank"}
+        rel="noopener noreferrer"
+        className="bg-slate-900 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
+        {...props}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link
+      href={href}
+      className="bg-slate-900 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-xs font-semibold leading-6  text-white inline-block"
+      {...props}
+    >
+      {content}
     </Link>
   );
 };

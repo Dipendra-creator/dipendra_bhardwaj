@@ -4,6 +4,7 @@ import {
   IconBriefcase2,
   IconMail,
   IconMessage2,
+  IconFileText,
 } from "@tabler/icons-react";
 
 export const navlinks = [
@@ -31,5 +32,11 @@ export const navlinks = [
     href: "/contact",
     label: "Contact",
     icon: IconMail,
+  },
+  {
+    href: "/Dipendra_Bhardwaj_Resume.pdf",
+    label: "Resume",
+    icon: IconFileText,
+    target: "_blank",
   },
 ];

@@ -1,33 +1,42 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { Heading } from "./Heading";
 import { Product } from "@/types/products";
 import { products } from "@/constants/products";
 import Link from "next/link";
 import Image from "next/image";
 import { Paragraph } from "./Paragraph";
-import { motion } from "framer-motion";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Products = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(() => {
+    gsap.from(".product-card", {
+      scrollTrigger: {
+        trigger: ".product-card",
+        start: "top 85%",
+        toggleActions: "play none none reverse",
+      },
+      y: 60,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out",
+    });
+  }, { scope: containerRef });
+
   return (
-    <div>
+    <div ref={containerRef}>
       <div className="grid grid-cols-1  gap-10">
         {products.map((product: Product, idx: number) => (
-          <motion.div
-            key={product.href}
-            initial={{
-              opacity: 0,
-              x: -50,
-            }}
-            animate={{
-              opacity: 1,
-              x: 0,
-            }}
-            transition={{ duration: 0.2, delay: idx * 0.1 }}
-          >
+          <div key={product.href} className="product-card">
             <Link
               href={product.slug ? `/projects/${product.slug}` : product.href}
-              key={product.href}
               className="group flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 hover:bg-gray-50 rounded-2xl transition duration-200 pt-4"
             >
               <Image
@@ -61,7 +70,7 @@ export const Products = () => {
                 </div>
               </div>
             </Link>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

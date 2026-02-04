@@ -34,7 +34,7 @@ export const Sidebar = () => {
               <Navigation setOpen={setOpen} />
             </div>
             <div onClick={() => isMobile() && setOpen(false)}>
-              <Badge href="/resume" text="Read Resume" />
+              <Badge href="/Dipendra_Bhardwaj_Resume.pdf" text="Read Resume" />
             </div>
           </motion.div>
         )}
@@ -60,25 +60,45 @@ export const Navigation = ({
 
   return (
     <div className="flex flex-col space-y-1 my-10 relative z-[100]">
-      {navlinks.map((link: Navlink) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          onClick={() => isMobile() && setOpen(false)}
-          className={twMerge(
-            "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm",
-            isActive(link.href) && "bg-white shadow-lg text-primary"
-          )}
-        >
-          <link.icon
+      {navlinks.map((link: Navlink) => {
+        // Handle external links (like resume PDF)
+        if (link.target === "_blank") {
+          return (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={twMerge(
+                "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+              )}
+            >
+              <link.icon className="h-4 w-4 flex-shrink-0" />
+              <span>{link.label}</span>
+            </a>
+          );
+        }
+        
+        return (
+          <Link
+            key={link.href}
+            href={link.href}
+            onClick={() => isMobile() && setOpen(false)}
             className={twMerge(
-              "h-4 w-4 flex-shrink-0",
-              isActive(link.href) && "text-sky-500"
+              "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm",
+              isActive(link.href) && "bg-white shadow-lg text-primary"
             )}
-          />
-          <span>{link.label}</span>
-        </Link>
-      ))}
+          >
+            <link.icon
+              className={twMerge(
+                "h-4 w-4 flex-shrink-0",
+                isActive(link.href) && "text-sky-500"
+              )}
+            />
+            <span>{link.label}</span>
+          </Link>
+        );
+      })}
 
       <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2">
         Socials

@@ -15,8 +15,9 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
   const blogs = await getAllBlogs();
-  const blog = blogs.find((blog) => blog.slug === params.slug);
+  const blog = blogs.find((blog) => blog.slug === slug);
 
   if (!blog) {
     return {
@@ -31,14 +32,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPost({ params }: Props) {
+  const { slug } = await params;
   const blogs = await getAllBlogs();
-  const blog = blogs.find((blog) => blog.slug === params.slug);
+  const blog = blogs.find((blog) => blog.slug === slug);
 
   if (!blog) {
     notFound();
   }
 
-  const { default: Content } = await import(`../../../app/blog/${params.slug}/content.mdx`);
+  const { default: Content } = await import(`../../../app/blog/${slug}/content.mdx`);
 
   return (
     <BlogLayout meta={blog}>
