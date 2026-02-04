@@ -12,21 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 export const TechStack = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    gsap.from(".tech-icons", {
-      scrollTrigger: {
-        trigger: ".tech-icons",
-        start: "top 85%",
-        toggleActions: "play none none reverse",
-      },
-      scale: 0.8,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.1,
-      ease: "back.out(1.2)",
-    });
-  }, { scope: containerRef });
-
   return (
     <div ref={containerRef}>
       <Heading

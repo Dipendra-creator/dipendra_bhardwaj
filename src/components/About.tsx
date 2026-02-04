@@ -21,33 +21,40 @@ export default function About() {
   ];
 
   useGSAP(() => {
-    // Animate content sections on scroll
-    gsap.from(".about-section", {
-      scrollTrigger: {
-        trigger: ".about-section",
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },
-      y: 50,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.2,
-      ease: "power2.out",
-    });
+    const isMobile = window.innerWidth < 768;
+    
+    if (!isMobile) {
+      // Animate content sections on scroll
+      gsap.from(".about-section", {
+        scrollTrigger: {
+          trigger: ".about-section",
+          start: "top 90%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
+        },
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: "power2.out",
+        clearProps: "all",
+      });
 
-    // Animate list items
-    gsap.from(".about-list li", {
-      scrollTrigger: {
-        trigger: ".about-list",
-        start: "top 85%",
-        toggleActions: "play none none reverse",
-      },
-      x: -30,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.1,
-      ease: "power2.out",
-    });
+      // Animate list items
+      gsap.from(".about-list li", {
+        scrollTrigger: {
+          trigger: ".about-list",
+          start: "top 90%",
+          toggleActions: "play none none none",
+        },
+        x: -20,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: "power2.out",
+        clearProps: "all",
+      });
+    }
   }, { scope: containerRef });
   
   return (
