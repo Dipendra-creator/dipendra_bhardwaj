@@ -1,0 +1,278 @@
+export const resumeData = {
+  personalInfo: {
+    name: "Dipendra Bhardwaj",
+    title: "Sr. SDE @ Bytescare | Ex - Sr. SDE @ Intellewings",
+    education: "Bachelor of Technology in Computer Science",
+    location: "Chandigarh, India",
+    email: "dipendrabhardwaj04@gmail.com",
+    linkedin: "www.linkedin.com/in/dipendra-bhardwaj-209537200",
+    github: "github.com/Dipendra-creator",
+    portfolio: "https://dipendra-bhardwaj.vercel.app",
+  },
+
+  summary: `I'm Dipendra Bhardwaj – a results-driven Software Engineer with over 3 years of hands-on experience in full stack development, cloud solutions, and payment systems. I've built robust, scalable applications using a range of cutting-edge technologies like Rust, Java, .NET, and Python. My journey in tech has seen me architecting real-time monitoring systems, modernizing legacy infrastructures, and optimizing ETL workflows that handle massive datasets.
+
+At Intellewings, I had the chance to lead projects from NFT transaction monitoring systems to dynamic Re-KYC risk assessment solutions, ensuring performance enhancements and streamlined operations along the way. I'm all about writing clean, efficient code while juggling multiple frameworks – from frontend tools like React and Angular to backend frameworks and DevOps essentials like Docker and Linux.
+
+Passionate about continuous learning and collaboration, I strive to combine technical expertise with creative problem-solving. Whether it's crafting a lightweight ORM or innovating data processing pipelines, I'm here to turn complex challenges into smart, scalable solutions.`,
+
+  topSkills: [
+    "Environmental, Social, and Governance (ESG)",
+    "Corporate Sustainability Reporting Directive (CSRD)",
+    "Software Design",
+  ],
+
+  certifications: [
+    "Sustainability and Corporate ESG",
+  ],
+
+  experience: [
+    {
+      company: "Bytescare",
+      position: "Senior Software Engineer",
+      duration: "June 2025 - Present",
+      location: "Chandigarh, India",
+      responsibilities: [
+        "Architecting modular, scalable CRM workflows and optimizing REST APIs for performance and reliability",
+        "Developed Dagster-based data orchestration pipelines for automated report generation with AI-driven insights, supporting configurable reports and reliable scheduling",
+        "Collaborating in an agile team for rapid releases, iterative improvements, and continuous integration",
+        "Building microservices architecture with focus on scalability and maintainability",
+        "Implementing AI-driven features for intelligent data processing and insights",
+      ],
+      technologies: [
+        "Python",
+        "Dagster",
+        "REST APIs",
+        "Microservices",
+        "AI/ML Integration",
+        "Agile Methodology",
+      ],
+    },
+    {
+      company: "IntelleWings",
+      position: "Senior Software Engineer",
+      duration: "November 2024 - May 2025 (7 months)",
+      location: "Chandigarh, India",
+      responsibilities: [
+        "Led development of NFT transaction monitoring systems with real-time tracking",
+        "Architected scalable solutions for blockchain data processing",
+        "Mentored junior developers and conducted code reviews",
+        "Optimized application performance and database queries",
+        "Implemented security best practices for financial systems",
+      ],
+      technologies: [
+        "Java",
+        "Spring Boot",
+        "Apache Kafka",
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "Kubernetes",
+      ],
+    },
+    {
+      company: "IntelleWings",
+      position: "Software Engineer",
+      duration: "July 2023 - November 2024 (1 year 5 months)",
+      location: "Chandigarh, India",
+      responsibilities: [
+        "Developed dynamic Re-KYC risk assessment solutions using Apache Kafka and Python",
+        "Built highly scalable rule engine using Java and Drools with 500+ rules for banking, NFTs, and insurance domains",
+        "Implemented real-time data processing pipelines",
+        "Created RESTful APIs for client integration",
+        "Optimized ETL workflows using Rust and Diesel.rs ORM for complex datasets",
+      ],
+      technologies: [
+        "Java",
+        "Python",
+        "Rust",
+        "Apache Kafka",
+        "Drools",
+        "Diesel.rs ORM",
+        "MySQL",
+        "MongoDB",
+        "REST APIs",
+      ],
+      projects: [
+        {
+          name: "Rule Engine System",
+          description: "Highly scalable rule engine with 500+ rules for banking, NFTs, and insurance domains",
+          technologies: ["Java", "Drools", "Spring Boot"],
+        },
+        {
+          name: "Re-KYC Risk Assessment",
+          description: "Dynamic risk assessment solution with real-time processing",
+          technologies: ["Python", "Apache Kafka", "PostgreSQL"],
+        },
+        {
+          name: "ETL Optimization",
+          description: "High-performance ETL workflows for complex datasets",
+          technologies: ["Rust", "Diesel.rs ORM"],
+        },
+      ],
+    },
+    {
+      company: "IntelleWings",
+      position: "Associate Software Engineer",
+      duration: "July 2022 - June 2023 (1 year)",
+      location: "Chandigarh, India",
+      responsibilities: [
+        "Developed banking rule engine components using Java and Drools",
+        "Worked on payment systems and transaction processing",
+        "Implemented frontend features using Angular and React",
+        "Collaborated with cross-functional teams for feature delivery",
+        "Wrote unit tests and maintained code quality standards",
+      ],
+      technologies: [
+        "Java",
+        "Angular",
+        "React",
+        ".NET Core",
+        "MySQL",
+        "Git",
+      ],
+    },
+  ],
+
+  education: {
+    institution: "GLA University",
+    degree: "Bachelor's degree, Computer Science",
+    duration: "May 2019 - March 2023",
+    location: "Mathura, India",
+  },
+
+  technicalSkills: {
+    languages: [
+      { name: "Rust", proficiency: "Advanced", icon: "rust" },
+      { name: "Java", proficiency: "Expert", icon: "java" },
+      { name: "Python", proficiency: "Expert", icon: "python" },
+      { name: ".NET/C#", proficiency: "Advanced", icon: "dotnet" },
+      { name: "TypeScript", proficiency: "Advanced", icon: "typescript" },
+      { name: "JavaScript", proficiency: "Advanced", icon: "javascript" },
+      { name: "Go", proficiency: "Intermediate", icon: "go" },
+    ],
+    backend: [
+      { name: "Spring Boot", proficiency: "Expert" },
+      { name: ".NET Core", proficiency: "Advanced" },
+      { name: "Django", proficiency: "Advanced" },
+      { name: "Flask", proficiency: "Advanced" },
+      { name: "FastAPI", proficiency: "Advanced" },
+      { name: "Node.js", proficiency: "Advanced" },
+      { name: "Express.js", proficiency: "Advanced" },
+      { name: "Apache Kafka", proficiency: "Advanced" },
+      { name: "Dagster", proficiency: "Advanced" },
+      { name: "Drools", proficiency: "Advanced" },
+    ],
+    frontend: [
+      { name: "React", proficiency: "Expert" },
+      { name: "Next.js", proficiency: "Advanced" },
+      { name: "Angular", proficiency: "Advanced" },
+      { name: "Vue.js", proficiency: "Intermediate" },
+      { name: "Tailwind CSS", proficiency: "Advanced" },
+      { name: "HTML/CSS", proficiency: "Expert" },
+      { name: "Sass", proficiency: "Advanced" },
+    ],
+    databases: [
+      { name: "MySQL", proficiency: "Expert" },
+      { name: "PostgreSQL", proficiency: "Advanced" },
+      { name: "MongoDB", proficiency: "Advanced" },
+      { name: "Redis", proficiency: "Advanced" },
+      { name: "SQLite", proficiency: "Advanced" },
+    ],
+    devops: [
+      { name: "Docker", proficiency: "Advanced" },
+      { name: "Kubernetes", proficiency: "Intermediate" },
+      { name: "AWS", proficiency: "Intermediate" },
+      { name: "Azure", proficiency: "Intermediate" },
+      { name: "GCP", proficiency: "Intermediate" },
+      { name: "Jenkins", proficiency: "Intermediate" },
+      { name: "GitHub Actions", proficiency: "Advanced" },
+      { name: "GitLab CI/CD", proficiency: "Intermediate" },
+    ],
+    tools: [
+      { name: "Apache Kafka", proficiency: "Advanced" },
+      { name: "Linux", proficiency: "Advanced" },
+      { name: "Git", proficiency: "Expert" },
+      { name: "VS Code", proficiency: "Expert" },
+      { name: "Postman", proficiency: "Advanced" },
+      { name: "Nginx", proficiency: "Intermediate" },
+      { name: "Grafana", proficiency: "Intermediate" },
+    ],
+  },
+
+  notableProjects: [
+    {
+      name: "LazzyORM",
+      description: "Open-source Python ORM available on PyPI, focusing on simplicity and developer productivity",
+      technologies: ["Python", "SQLAlchemy", "PyPI"],
+      link: "https://pypi.org/project/lazzyorm/",
+      highlights: [
+        "Lightweight ORM with intuitive API",
+        "Published on PyPI for community use",
+        "Focus on developer experience and productivity",
+      ],
+    },
+    {
+      name: "NFT Transaction Monitoring System",
+      description: "Real-time monitoring system for NFT transactions with alerting and analytics",
+      technologies: ["Java", "Spring Boot", "Kafka", "PostgreSQL"],
+      highlights: [
+        "Real-time transaction processing",
+        "Scalable architecture handling millions of transactions",
+        "Advanced analytics and reporting features",
+      ],
+    },
+    {
+      name: "Rule Engine for Financial Services",
+      description: "Highly scalable rule engine with 500+ rules for banking, NFTs, and insurance",
+      technologies: ["Java", "Drools", "Spring Boot", "MySQL"],
+      highlights: [
+        "500+ complex business rules",
+        "Multi-domain support (banking, NFTs, insurance)",
+        "High performance and scalability",
+      ],
+    },
+    {
+      name: "Re-KYC Risk Assessment Platform",
+      description: "Dynamic risk assessment solution with real-time processing using Kafka",
+      technologies: ["Python", "Apache Kafka", "PostgreSQL", "Redis"],
+      highlights: [
+        "Real-time risk scoring",
+        "Integration with multiple data sources",
+        "Automated compliance workflows",
+      ],
+    },
+    {
+      name: "ETL Pipeline Optimization",
+      description: "High-performance ETL workflows using Rust and Diesel.rs ORM",
+      technologies: ["Rust", "Diesel.rs", "PostgreSQL"],
+      highlights: [
+        "Outstanding performance improvements",
+        "Complex dataset processing",
+        "Memory-efficient operations",
+      ],
+    },
+  ],
+
+  interests: [
+    "Full-stack Development",
+    "Cloud Architecture",
+    "Microservices",
+    "DevOps and CI/CD",
+    "Open Source Contribution",
+    "System Design",
+    "Performance Optimization",
+    "Clean Code Practices",
+    "Sustainability and ESG in Tech",
+  ],
+
+  achievements: [
+    "Built and deployed 5+ production-grade applications serving thousands of users",
+    "Optimized ETL workflows resulting in 60% performance improvement",
+    "Led team of 3 developers on critical NFT monitoring project",
+    "Published open-source ORM used by developers worldwide",
+    "Implemented 500+ business rules in scalable rule engine",
+    "Certified in Sustainability and Corporate ESG",
+    "Modernized legacy systems reducing technical debt by 40%",
+  ],
+};

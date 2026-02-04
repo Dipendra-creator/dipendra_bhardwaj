@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Chatbot Markdown Styles */
+.chatbot-markdown {
+  @apply text-sm;
+}
+
+.chatbot-markdown h1 {
+  @apply text-lg font-bold mt-3 mb-2;
+}
+
+.chatbot-markdown h2 {
+  @apply text-base font-bold mt-3 mb-2;
+}
+
+.chatbot-markdown h3 {
+  @apply text-sm font-semibold mt-2 mb-1;
+}
+
+.chatbot-markdown p {
+  @apply my-2 leading-relaxed;
+}
+
+.chatbot-markdown ul {
+  @apply list-disc pl-5 my-2 space-y-1;
+}
+
+.chatbot-markdown ol {
+  @apply list-decimal pl-5 my-2 space-y-1;
+}
+
+.chatbot-markdown li {
+  @apply my-1;
+}
+
+.chatbot-markdown strong {
+  @apply font-semibold;
+}
+
+.chatbot-markdown em {
+  @apply italic;
+}
+
+.chatbot-markdown code {
+  @apply bg-neutral-200 px-1 py-0.5 rounded text-xs;
+}
+
+.chatbot-markdown pre {
+  @apply bg-neutral-200 p-2 rounded my-2 overflow-x-auto;
+}
+
+.chatbot-markdown pre code {
+  @apply bg-transparent p-0;
+}
+
+.chatbot-markdown a {
+  @apply text-blue-600 hover:underline;
+}
+
+.chatbot-markdown blockquote {
+  @apply border-l-4 border-neutral-300 pl-3 italic my-2;
+}
