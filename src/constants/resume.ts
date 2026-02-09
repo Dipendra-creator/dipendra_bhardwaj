@@ -3,23 +3,23 @@ export const resumeData = {
     name: "Dipendra Bhardwaj",
     title: "Sr. SDE @ Bytescare | Ex - Sr. SDE @ Intellewings",
     education: "Bachelor of Technology in Computer Science",
-    location: "Chandigarh, India",
+    location: "Aligarh, India",
     email: "dipendrabhardwaj04@gmail.com",
     linkedin: "www.linkedin.com/in/dipendra-bhardwaj-209537200",
     github: "github.com/Dipendra-creator",
     portfolio: "https://dipendra-bhardwaj.vercel.app",
   },
 
-  summary: `I'm Dipendra Bhardwaj – a results-driven Software Engineer with over 3 years of hands-on experience in full stack development, cloud solutions, and payment systems. I've built robust, scalable applications using a range of cutting-edge technologies like Rust, Java, .NET, and Python. My journey in tech has seen me architecting real-time monitoring systems, modernizing legacy infrastructures, and optimizing ETL workflows that handle massive datasets.
+  summary: `I'm Dipendra Bhardwaj - a results-driven Software Engineer with over 3 years of hands-on experience in full stack development, cloud solutions, and payment systems. I've built robust, scalable applications using a range of cutting-edge technologies like Rust, Java, .NET, and Python. My journey in tech has seen me architecting real-time monitoring systems, modernizing legacy infrastructures, and optimizing ETL workflows that handle massive datasets.
 
-At Intellewings, I had the chance to lead projects from NFT transaction monitoring systems to dynamic Re-KYC risk assessment solutions, ensuring performance enhancements and streamlined operations along the way. I'm all about writing clean, efficient code while juggling multiple frameworks – from frontend tools like React and Angular to backend frameworks and DevOps essentials like Docker and Linux.
+At Intellewings, I had the chance to lead projects from transaction monitoring systems to dynamic Re-KYC risk assessment solutions, ensuring performance enhancements and streamlined operations along the way. I'm all about writing clean, efficient code while juggling multiple frameworks - from frontend tools like React and Angular to backend frameworks and DevOps essentials like Docker and Linux.
 
 Passionate about continuous learning and collaboration, I strive to combine technical expertise with creative problem-solving. Whether it's crafting a lightweight ORM or innovating data processing pipelines, I'm here to turn complex challenges into smart, scalable solutions.`,
 
   topSkills: [
     "Environmental, Social, and Governance (ESG)",
     "Corporate Sustainability Reporting Directive (CSRD)",
-    "Software Design",
+    "Scalable System Design",
   ],
 
   certifications: [
@@ -31,7 +31,7 @@ Passionate about continuous learning and collaboration, I strive to combine tech
       company: "Bytescare",
       position: "Senior Software Engineer",
       duration: "June 2025 - Present",
-      location: "Chandigarh, India",
+      location: "Remote, India",
       responsibilities: [
         "Architecting modular, scalable CRM workflows and optimizing REST APIs for performance and reliability",
         "Developed Dagster-based data orchestration pipelines for automated report generation with AI-driven insights, supporting configurable reports and reliable scheduling",
@@ -46,6 +46,18 @@ Passionate about continuous learning and collaboration, I strive to combine tech
         "Microservices",
         "AI/ML Integration",
         "Agile Methodology",
+        "Docker",
+        "Kubernetes",
+        "Scaleway",
+        "GitHub Actions",
+        "MongoDB",
+        "SQL/NoSQL Databases",
+        "Cloud Platforms (AWS, Azure, GCP)",
+        "NestJS",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Angular",
       ],
     },
     {
@@ -64,10 +76,19 @@ Passionate about continuous learning and collaboration, I strive to combine tech
         "Java",
         "Spring Boot",
         "Apache Kafka",
-        "PostgreSQL",
         "Redis",
         "Docker",
         "Kubernetes",
+        "Git",
+        "React",
+        "Angular",
+        ".NET Core",
+        "MVC Framework",
+        "MySQL",
+        "MongoDB",
+        "Jenkins",
+        "Angular",
+        "Drools"
       ],
     },
     {
@@ -92,6 +113,12 @@ Passionate about continuous learning and collaboration, I strive to combine tech
         "MySQL",
         "MongoDB",
         "REST APIs",
+        "Docker",
+        "Kubernetes",
+        "Git",
+        "React",
+        "Angular",
+        ".NET Core",
       ],
       projects: [
         {
@@ -202,6 +229,16 @@ Passionate about continuous learning and collaboration, I strive to combine tech
 
   notableProjects: [
     {
+      name: "AI-Driven Report Generation System",
+      description: "Automated report generation system using Dagster and AI for insights",
+      technologies: ["Python", "Dagster", "AI/ML Integration"],
+      highlights: [
+        "Automated data orchestration with Dagster",
+        "AI-driven insights for enhanced reporting",
+        "Configurable reports with reliable scheduling",
+      ],
+    },
+    {
       name: "LazzyORM",
       description: "Open-source Python ORM available on PyPI, focusing on simplicity and developer productivity",
       technologies: ["Python", "SQLAlchemy", "PyPI"],
@@ -213,7 +250,7 @@ Passionate about continuous learning and collaboration, I strive to combine tech
       ],
     },
     {
-      name: "NFT Transaction Monitoring System",
+      name: "Transaction Monitoring System",
       description: "Real-time monitoring system for NFT transactions with alerting and analytics",
       technologies: ["Java", "Spring Boot", "Kafka", "PostgreSQL"],
       highlights: [
