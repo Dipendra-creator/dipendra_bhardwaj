@@ -7,15 +7,15 @@ export const kiloConfig = {
       name: "Anthropic: Claude Opus 4.5",
     },
     {
-      id: "minimax/minimax-m2.1:free",
-      name: "Minimax: Minimax M2.1",
+      id: "minimax/minimax-m2.5:free",
+      name: "Minimax: Minimax M2.5",
     },
     {
       id: "zhipuai/glm-4.7:free",
       name: "GLM-4.7 (Free - Exclusive to Kilo)",
     },
   ],
-  defaultModel: "minimax/minimax-m2.1:free",
+  defaultModel: "minimax/minimax-m2.5:free",
 };
 
 export const getApiKey = () => {
